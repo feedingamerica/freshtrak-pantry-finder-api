@@ -52,6 +52,8 @@ describe AgencySerializer do
         'phone' => agency.phone,
         'name' => agency.loc_name,
         'nickname' => agency.loc_nickname,
+        'latitude' => agency.latitude.to_f.to_s,
+        'longitude' => agency.longitude.to_f.to_s,
         'estimated_distance' => '',
         'events' => [
           {
@@ -109,6 +111,8 @@ describe AgencySerializer do
         'phone' => agency.phone,
         'name' => agency.loc_name,
         'nickname' => agency.loc_nickname,
+        'latitude' => agency.latitude.to_f.to_s,
+        'longitude' => agency.longitude.to_f.to_s,
         'estimated_distance' => '',
         'events' => [
           {

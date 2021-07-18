@@ -5,6 +5,7 @@ class AgencySerializer < ActiveModel::Serializer
   attributes :id, :address, :city, :state, :zip, :phone
   attribute :loc_name, key: :name
   attribute :loc_nickname, key: :nickname
+  attributes :latitude, :longitude
   attribute :estimated_distance
 
   has_many :events

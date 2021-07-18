@@ -15,6 +15,7 @@ Jets.application.routes.draw do
     end
     resources :events, only: %i[index show]
     resources :foodbanks, only: :index
+    resources :zip_codes, only: :index
   end
 
   root 'jets/public#show'

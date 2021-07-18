@@ -10,4 +10,8 @@ class ZipCode < ApplicationRecord
 
   default_scope { active }
   scope :active, -> { where(priority: 1) }
+
+  scope :by_zip_code, lambda { |zip_code|
+    where({ zip_code: zip_code })
+  }
 end
