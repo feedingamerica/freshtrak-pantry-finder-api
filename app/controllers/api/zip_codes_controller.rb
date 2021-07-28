@@ -13,7 +13,6 @@ module Api
       else
         render json: serialized_zip_codes
       end
-      render json: serialized_zip_codes
     end
 
     private
